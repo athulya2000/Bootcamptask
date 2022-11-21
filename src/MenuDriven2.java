@@ -68,6 +68,8 @@ public class MenuDriven2 {
                         n=n/10;
                     }
                     System.out.println("Reverse of a number is "+reverse);
+                default:
+                    System.out.println("ente a valid option");
             }
         }
     }
