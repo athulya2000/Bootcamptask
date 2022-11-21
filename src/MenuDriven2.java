@@ -19,7 +19,14 @@ public class MenuDriven2 {
                     System.out.println("Largest among 3 number is \t"+ans);
                     break;
 
-
+                case 2:
+                    System.out.println("Enter a 3 number");
+                    int n1=s.nextInt();
+                    int n2=s.nextInt();
+                    int n3=s.nextInt();
+                    int smallest=n1<n2?(n1<n3?n1:n3):(n2<n3?n2:n3);
+                    System.out.println("Smallest among 3 number is \t"+smallest);
+                    break;
             }
 
 
