@@ -36,7 +36,7 @@ public class MenuDriven2 {
                         System.out.println(p + " is not prime number");
                     } else {
                         for (int i = 2; i <= p / 2; i++) {
-                            if (i % 2 == 0) {
+                            if (p % i == 0) {
                                 System.out.println(p + " is not prime number");
                                 flag = 1;
                                 break;
@@ -47,6 +47,7 @@ public class MenuDriven2 {
                         }
 
                     }
+                    break;
                 case 4:
                     System.out.println("Enter a number");
                     int even = s.nextInt();
@@ -56,8 +57,17 @@ public class MenuDriven2 {
                         System.out.println(even + " is not even number");
 
                     }
-
-
+                    break;
+                case 5:
+                    int reverse=0;
+                    System.out.println("Enter a number");
+                    int n=s.nextInt();
+                    while(n!=0){
+                        int remainder=n%10;
+                        reverse=reverse*10+remainder;
+                        n=n/10;
+                    }
+                    System.out.println("Reverse of a number is "+reverse);
             }
         }
     }
